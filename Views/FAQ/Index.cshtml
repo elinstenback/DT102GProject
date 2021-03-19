@@ -1,0 +1,27 @@
+@model IEnumerable<DT102GProject.Models.FAQ>
+
+@{
+    ViewData["Title"] = "Admin - Questions";
+}
+<div class="crud-container">
+    <h1>Administer questions</h1>
+
+    <p>
+        <a asp-action="Create">Create new question</a>
+    </p>
+
+    <div class="admin-faq">
+        <p class="model-question">@Html.DisplayNameFor(model => model.Question)</p>
+        <p class="model-answer">@Html.DisplayNameFor(model => model.Answer)</p>
+        @foreach (var item in Model)
+        {
+            <p class="item-question">@Html.DisplayFor(modelItem => item.Question)</p>
+            <p class="item-answer">@Html.DisplayFor(modelItem => item.Answer)</p>
+            <div class="admin-faq-link">
+                <a asp-action="Edit" asp-route-id="@item.FAQId">Edit</a>
+                <a asp-action="Details" asp-route-id="@item.FAQId">Details</a>
+                <a asp-action="Delete" asp-route-id="@item.FAQId">Delete</a>
+            </div>
+        }
+    </div>
+</div>

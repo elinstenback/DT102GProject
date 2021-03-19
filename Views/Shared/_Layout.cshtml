@@ -1,0 +1,88 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DT102GProject</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/c4348bcdca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Comecode</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Courses">Shop Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="FAQ">FAQ</a>
+                        </li>
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Admin">Admin</a>
+                            </li>
+                        }
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main-container">
+        <main class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="footer-links">
+            <p class="logo">Comecode.</p>
+            <a asp-area="" asp-controller="Home" asp-action="Index"><i class="fab fa-facebook-f"></i></a>
+            <a asp-area="" asp-controller="Home" asp-action="Index"><i class="fab fa-linkedin-in"></i></a>
+            <a asp-area="" asp-controller="Home" asp-action="Index"><i class="fab fa-instagram"></i></a>
+            <a asp-area="" asp-controller="Home" asp-action="Index"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="footer-courses">
+            <p>Contact</p>
+            <a asp-area="" asp-controller="Home" asp-action="Index">info@comecode.com</a><br />
+            <a asp-area="" asp-controller="Home" asp-action="Index">020-123 45 67</a><br />
+        </div>
+        <div class="footer-company">
+            <p>Company</p>
+            <a asp-area="" asp-controller="Home" asp-action="Index">About Comecode</a><br />
+            <a asp-area="" asp-controller="Home" asp-action="Index">Meet the team</a><br />
+            <a asp-area="" asp-controller="Home" asp-action="Index">Jobs</a>
+        </div>
+        <div class="footer-support">
+            <p>Support</p>
+            <a asp-area="" asp-controller="Home" asp-action="Index">FAQ</a><br />
+            <a asp-area="" asp-controller="Home" asp-action="Index">Return Policy</a><br />
+            <a asp-area="" asp-controller="Home" asp-action="Index">Contact Us</a>
+        </div>
+        <div class="footer-container">
+            <p>Copywright &copy; 2021 Comecode. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

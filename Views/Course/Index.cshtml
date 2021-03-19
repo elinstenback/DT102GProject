@@ -1,0 +1,34 @@
+@model IEnumerable<DT102GProject.Models.Course>
+
+@{ ViewData["Title"] = "Admin - Courses"; }
+
+<div class="crud-container">
+    <h1>Administer courses</h1>
+
+    <p>
+        <a asp-action="Create">Add new course</a>
+    </p>
+
+
+    <div class="admin-question">
+        <p class="model-title">@Html.DisplayNameFor(model => model.Title)</p>
+        <p class="model-price">@Html.DisplayNameFor(model => model.Price)</p>
+        <p class="model-length">@Html.DisplayNameFor(model => model.Length)</p>
+        <p class="model-level">@Html.DisplayNameFor(model => model.Level)</p>
+        <p class="model-description">@Html.DisplayNameFor(model => model.Description)</p>
+        @foreach (var item in Model)
+        {
+            <p class="item-title">@Html.DisplayFor(modelItem => item.Title)</p>
+            <p class="item-price">@Html.DisplayFor(modelItem => item.Price)</p>
+            <p class="item-length">@Html.DisplayFor(modelItem => item.Length)</p>
+            <p class="item-level">@Html.DisplayFor(modelItem => item.Level)</p>
+            <p class="item-description">@Html.DisplayFor(modelItem => item.Description)</p>
+
+            <div class="admin-question-link">
+                <a asp-action="Edit" asp-route-id="@item.CourseId">Edit</a>
+                <a asp-action="Details" asp-route-id="@item.CourseId">Details</a>
+                <a asp-action="Delete" asp-route-id="@item.CourseId">Delete</a>
+            </div>
+         }
+    </div>
+</div>

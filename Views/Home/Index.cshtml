@@ -1,0 +1,112 @@
+﻿@model dynamic
+@{
+    ViewData["Title"] = "Company - Homepage";
+}
+
+<header class="index-header">
+    <h1>Learn to create</h1>
+    <p>Courses for creative people who want to learn more about coding, design, user experience and more.
+    <br /><br />
+    <a class="about-button" asp-area="" asp-controller="Home" asp-action="Courses">View courses</a>
+    <a class="white-button" asp-area="" asp-controller="Home" asp-action="About">About us</a>
+    </p>
+</header>
+<div class="index-container">
+    <section class="index-course">
+        <h2>Selection of courses</h2>
+        <p class="p">Below are some of the courses Comecode offers. We have a selection of courses to suit everyone - whether you are an experienced programmer or an absolute beginner.</p>
+        @{ var list = Model.Course;
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (i == 8)
+                {
+                    break;
+                }
+
+                <div class="course">
+                    <p class="name">
+                        @list[i].Title
+                    </p>
+                    <p class="price">
+                        $@list[i].Price
+                    </p>
+                    <p class="length">
+                        <i class="fas fa-clock"></i>
+                        @list[i].Length
+                    </p>
+                    <p class="level">
+                        @{
+                            if (list[i].Level == "Beginner")
+                            {
+                                <span style="color:green;"><i class="fas fa-circle"></i></span>
+                            }
+                            if (list[i].Level == "Intermediate")
+                            {
+                                <span style="color:orange;"><i class="fas fa-circle"></i></span>
+                            }
+                            if (list[i].Level == "Advanced")
+                            {
+                                <span style="color:red;"><i class="fas fa-circle"></i></span>
+                            }
+                        }
+
+                        @list[i].Level
+                    </p>
+                    <p class="description">
+                        @list[i].Description
+                    </p>
+                </div>
+            }
+        }
+        <br />
+        <a class="black-button" asp-area="" asp-controller="Home" asp-action="Courses">View all courses</a>
+        <br /><br />
+    </section>
+        <section class="offer">
+            <h2>Why Comecode?</h2>
+            <p class="p">Do you want to make your own site from scratch, learn animations or another skill? Our courses have you covered for you to learn at your own pace.</p>
+            <article class="support">
+                <img src="~/img/teacher.jpg" alt="Illustrated mac"/>
+                <h3>We'll support you</h3>
+                <p>Ask your questions to a supportive group of teachers - no matter day or night, we got you!</p>
+            </article>
+            <article class="place">
+                <img src="~/img/world.jpg" alt="Illustrated globe" />
+                <h3>Wherever you are</h3>
+                <p>You should have the opportunity to learn no matter where in the world you are, therefore all our courses are online based.</p>
+            </article>
+            <article class="time">
+                <img src="~/img/student.jpg" alt="Illustrated watch" />
+                <h3>Wehenever you want</h3>
+                <p>When you order a course, it is yours - forever. You choose when you want to learn, at your own pace.</p>
+            </article>
+        </section>
+        <section class="index-faq">
+            <h2>Some frequently asked questions</h2>
+            <ul id="expander">
+                @{ var list2 = Model.FAQ;
+                    for (int i = 0; i < list2.Count; i++)
+                    {
+                        if (i == 4)
+                        {
+                            break;
+                        }
+                        <li>
+                            <button class="expanderBtn" aria-expanded="false">
+                                @list2[i].Question
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <div class="textExpand" role="region">
+                                <p>
+                                    @list2[i].Answer
+                                </p>
+                            </div>
+                        </li>
+                    }
+                }
+            </ul>
+            <br />
+            <a class="black-button" asp-area="" asp-controller="Home" asp-action="FAQ">View all questions</a>
+            <br /><br />
+        </section>
+</div>

@@ -1,0 +1,50 @@
+﻿@model IEnumerable<DT102GProject.Models.Course>
+
+@{
+    ViewData["Title"] = "Company - Courses";
+}
+<header class="course-header">
+    <h1 class="display-4">Courses</h1>
+    <p>Below are some of the courses Comecode offers.</p>
+</header>
+<div class="course-container">
+        @foreach (var item in Model)
+        {
+            <div class="course">
+                <p class="name">
+                    @Html.DisplayFor(modelItem => item.Title)
+                </p>
+                <p class="price">
+                    $@Html.DisplayFor(modelItem => item.Price)
+                </p>
+                <p class="length">
+                    <i class="fas fa-clock"></i>
+                    @Html.DisplayFor(modelItem => item.Length)
+                </p>
+                <p class="level">
+
+                    @{
+                        if (item.Level == "Beginner")
+                        {
+                            <span style="color:green;"><i class="fas fa-circle"></i></span>
+                        }
+                        if (item.Level == "Intermediate")
+                        {
+                            <span style="color:orange;"><i class="fas fa-circle"></i></span>
+                        }
+                        if (item.Level == "Advanced")
+                        {
+                            <span style="color:red;"><i class="fas fa-circle"></i></span>
+                        }
+                    }
+
+
+                    @Html.DisplayFor(modelItem => item.Level)
+                </p>
+                <p class="description">
+                    @Html.DisplayFor(modelItem => item.Description)
+                </p>
+                <button type="button" class="purchase">Buy</button>
+            </div>
+        }
+</div>

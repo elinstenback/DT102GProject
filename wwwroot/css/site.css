@@ -1,0 +1,1184 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: "Overpass", Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+/* Header
+-------------------------------------------------- */
+
+.mb-3, .my-3 {
+    margin-bottom: 0rem !important;
+}
+
+.border-bottom {
+    border-bottom: 0px solid #dee2e6 !important;
+}
+
+.navbar {
+    padding: 20px;
+    position: relative;
+}
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.navbar-toggler {
+    padding: 0px;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+.navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.pb-3, .py-3 {
+    padding-bottom: 0rem !important;
+}
+
+/* Index
+-------------------------------------------------- */
+.index-header {
+    background-color: #F8F8EB;
+    background-image: url(../img/study-background-mobile.png);
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 70px;
+    background-size: 100%;
+    height: 550px;
+}
+.index-header h1 {
+    padding: 0 20px;
+    padding-top: 50px;
+    font-size: 42px;
+    font-weight: 800;
+}
+.index-header p {
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.index-header .about-button {
+    color: #fff;
+    background-color: #000;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    border: 1px solid #ccc;
+    transition: all 0.5s ease-in-out;
+}
+.index-header .white-button {
+    color: #000;
+    background-color: #fff;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    border: 1px solid #ccc;
+    transition: all 0.5s ease-in-out;
+}
+.index-header .about-button:hover {
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+}
+.index-header .white-button:hover {
+    background-color: #000;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+.index-container .index-course {
+    padding: 50px 20px;
+}
+.index-container .index-course h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+.index-container .index-course .p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.index-container .offer {
+    padding: 50px 20px;
+}
+.index-container .offer h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+.index-container .offer article {
+    margin-top: 30px;
+}
+.index-container .offer img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.index-container .offer h3 {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 26px;
+}
+.index-container .offer p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.index-container .index-faq {
+    padding: 50px 20px;
+}
+
+.index-container .index-faq h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+.black-button {
+    color: #fff;
+    background-color: #000;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.black-button:hover {
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Shop courses
+-------------------------------------------------- */
+.course-header {
+    background-color: #F8F8EB;
+    padding: 100px 20px;
+}
+
+.course-header h1 {
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.course-header p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.course-container {
+    width: 100%;
+    padding: 30px 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.course {
+    padding: 20px;
+    margin: 30px 0;
+    position: relative;
+    border-radius: 3px;
+    background-color: #F7F8F2;
+}
+.course .name {
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+.course .price {
+    position: absolute;
+    width: 100%;
+    right: 0px;
+    top: 0px;
+    padding: 10px;
+    color: #fff;
+    background-color: #000;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+}
+.course .length {
+    float: left;
+    padding-right: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
+}
+.course .level {
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
+}
+.course .fa-clock {
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
+    margin-right: 0px;
+}
+.course .description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+.course button {
+    width: 130px;
+    color: #000;
+    background-color: #fff;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    border: 1px solid #ccc;
+    transition: all 0.5s ease-in-out;
+}
+.course button:hover {
+    background-color: #000;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+/* About
+-------------------------------------------------- */
+.about-header {
+    background-color: #F8F8EB;
+    padding: 100px 20px;
+}
+.about-header h1 {
+    font-size: 42px;
+    font-weight: 800;
+}
+.about-header p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.about-container {
+    width: 100%;
+    padding: 30px 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.about-container h2 {    
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+}
+.about-container p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.about-container .company {
+    padding: 50px 0;
+}
+.about-container .company h2 {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.about-container .team img {
+    width: 100%;
+}
+.about-container .team h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0;
+    margin-top: 10px;
+}
+.about-container .team h4 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: orange;
+    margin: 5px 0;
+}
+.about-container .team p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.about-container .team .social-links a i{
+    font-size: 16px;
+    padding-right: 10px;
+    color: orange;
+    margin-bottom: 50px;
+}
+
+/* FAQ
+-------------------------------------------------- */
+.faq-header {
+    background-color: #F8F8EB;
+    padding: 100px 20px;
+}
+
+.faq-header h1 {
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.faq-header p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.faq-container {
+    width: 100%;
+    padding: 30px 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+ #expander {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+ #expander li .expanderBtn {
+     padding: 0;
+     padding-top: 20px;
+     padding-bottom: 20px;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #E8E8E8;
+    text-align: left;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+ #expander li .expanderBtn i {
+        float: right;
+}
+ .textExpand {
+    background-color: #fff;
+    display: none;
+    padding: 20px 0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    border-bottom: 1px solid #E8E8E8;
+}
+.textExpand p {
+    padding: 0;
+    margin: 0;
+}
+
+/* Admin
+-------------------------------------------------- */
+.admin-header {
+    background-color: #F8F8EB;
+    padding: 100px 20px;
+}
+.admin-header h1 {
+    font-size: 42px;
+    font-weight: 800;
+}
+.admin-header a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000;
+    text-decoration: underline;
+    padding: 0;
+}
+.admin-header a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Admin course, faq
+-------------------------------------------------- */
+.crud-container {
+    padding: 50px 20px;
+}
+.crud-container h1 {
+    font-size: 42px;
+    font-weight: 800;
+}
+.crud-container a {
+    color: orange;
+}
+.crud-container .admin-faq {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 50px;
+}
+.crud-container .admin-faq .model-question {
+    font-size: 16px;
+    font-weight: 800;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    grid-column: 1/2;
+}
+.crud-container .admin-faq .model-answer {
+    font-size: 16px;
+    font-weight: 800;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    grid-column: 2/3;
+}
+.crud-container .admin-faq .item-question {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    padding: 10px 0;
+    padding-right: 10px;
+    margin: 0;
+    grid-column: 1/2;
+}
+.crud-container .admin-faq .item-answer {
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
+    padding: 0;
+    padding: 10px 0;
+    margin: 0;
+    grid-column: 2/3;
+}
+.crud-container .admin-faq .admin-faq-link {
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    grid-column: 2/3;
+}
+.crud-container .admin-question {
+    margin-top: 50px;
+}
+.crud-container .admin-question .model-title,
+.crud-container .admin-question .model-price,
+.crud-container .admin-question .model-length,
+.crud-container .admin-question .model-level,
+.crud-container .admin-question .model-description {
+    font-size: 16px;
+    font-weight: 800;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.crud-container .admin-question .item-title,
+.crud-container .admin-question .item-price,
+.crud-container .admin-question .item-length,
+.crud-container .admin-question .item-level,
+.crud-container .admin-question .item-description {
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+.crud-container .admin-question .admin-question-link {
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.btn-primary {
+    border-radius: unset;
+    color: #fff;
+    background-color: #000;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    border: 1px solid #ccc;
+    transition: all 0.5s ease-in-out;
+}
+.btn-primary:hover {
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    border: 1px solid #ccc;
+}
+.btn-danger {
+    border-radius: unset;
+    color: #fff;
+    background-color: #000;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    border: 1px solid #ccc;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-danger:hover {
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    font-weight: 400;
+
+    
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+/* Login
+-------------------------------------------------- */
+.login-container {
+    padding: 50px 20px;
+}
+
+/* Footer
+-------------------------------------------------- */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+footer .footer {
+    width: 100%;
+    line-height: 0px;
+}
+footer .logo {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+footer p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+footer a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+}
+footer a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+footer .footer-links {
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+footer .footer-links i {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+footer .footer-courses {
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+footer .footer-company {
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+footer .footer-support {
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+footer .footer-container {
+    background-color: #000;
+    color: #fff;
+    padding: 0 20px;
+}
+footer .footer-container {
+    font-size: 12px;
+    font-weight: 100;
+}
+footer .footer-container ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+footer .footer-container p {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+/* Tablet
+-------------------------------------------------- */
+@media only screen and (min-width: 768px) {
+    /* Index */
+    .index-header {
+    background-color: #F8F8EB;
+    background-image: url(../img/study-background-desktop.png);
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 200px;
+    background-size: 100%;
+    height: 550px;
+    }
+    .index-header h1 {
+        padding: 0 30px;
+        padding-top: 100px;
+        font-size: 42px;
+        font-weight: 800;
+    }
+    .index-header p {
+        padding: 0 30px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        width: 65%;
+    }
+    .index-container .index-course {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+    .index-container .index-course h2 {
+        grid-column: 1/4;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 42px;
+        margin-bottom: 20px;
+    }
+    .index-container .index-course .p {
+        grid-column: 1/4;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    .index-container .index-course .course {
+        margin: 10px 10px;
+    }
+    .index-container .offer {
+        padding: 50px 20px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .index-container .offer h2 {
+        grid-column: 1/3;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 42px;
+        margin-bottom: 20px;
+    }
+    .index-container .offer .p {
+        grid-column: 1/3;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    .index-container .offer article {
+        margin: 0 10px;
+        margin-top: 20px;
+    }
+    .index-container .offer h3 {
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 28px;
+    }
+    .index-container .offer p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+    }
+    .index-container .index-faq h2 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 42px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .black-button {
+        color: #fff;
+        background-color: #000;
+        padding: 15px 20px;
+        font-size: 16px;
+        font-weight: 300;
+        text-decoration: none;
+        transition: all 0.5s ease-in-out;
+        grid-column: 1/2;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 30px;
+    }
+    #expander {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    /* Courses */
+    .course-header {
+    padding: 100px 30px;
+    }
+    .course-header h1 {
+        font-size: 42px;
+        font-weight: 800;
+    }
+    .course-header p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .course-container {
+        padding: 50px 0;
+        padding-right: 20px;
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+    .course-container .course {
+        margin: 10px 10px;
+    }
+    /* About */
+    .about-header {
+        padding: 100px 30px;
+    }
+    .about-container {
+        width: 100%;
+        padding: 50px 0;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .about-container h2 {    
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 34px;
+    }
+    .about-container p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    .about-container .company {
+        text-align: left;
+        padding: 50px 10px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .about-container .company h2 {
+    margin-right: 10px; 
+    margin-bottom: 0px;
+    }
+    .about-container .company p {
+         margin-left: 10px;
+    }
+    .about-container .team {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .about-container .team h2 {
+        padding-left: 10px;
+    }
+    .about-container .team article {
+        padding: 0 10px;
+    }
+    /* FAQ */
+    .faq-header {
+    padding: 100px 30px;
+    }
+    .faq-header h1 {
+        font-size: 42px;
+        font-weight: 800;
+    }
+    .faq-header p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .faq-container {
+        padding: 50px 0;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    #expander li .expanderBtn {
+        font-size: 18px;
+
+    }
+    .textExpand {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    /* Admin */
+    .admin-header {
+        padding: 100px 30px;
+    }
+    /* Admin course */
+    .crud-container {
+        padding: 50px 30px;
+    }
+    .crud-container .admin-question {
+        display: grid;
+        grid-template-columns: 15% 15% 15% 15% 40%;
+        margin-top: 50px;
+    }
+    .crud-container .admin-question .model-title,
+    .crud-container .admin-question .item-title {
+        padding-right: 20px;
+        grid-column: 1/2;
+    }
+    .crud-container .admin-question .model-price,
+    .crud-container .admin-question .item-price {
+        grid-column: 2/3;
+    }
+    .crud-container .admin-question .model-length,
+    .crud-container .admin-question .item-length {
+        grid-column: 3/4;
+    }
+    .crud-container .admin-question .model-level,
+    .crud-container .admin-question .item-level {
+        grid-column: 4/5;
+    }
+    .crud-container .admin-question .model-description,
+    .crud-container .admin-question .item-description,
+    .crud-container .admin-question .admin-question-link {
+        grid-column: 5/6;
+    }
+    /* Login */
+    .login-container {
+        padding: 50px 30px;
+    }
+    /* Footer */
+    footer {
+        padding: 100px 10px;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+    footer p {
+        font-size: 16px;
+    }
+    footer a {
+        font-size: 16px;
+    }
+    footer .footer-links {
+        grid-column: 1/4;
+        padding: 0 20px;
+        margin-bottom: 50px;
+    }
+    footer .footer-courses {
+        padding: 0 20px;
+        margin-bottom: 100px;
+    }
+    footer .footer-company {
+        padding: 0 20px;
+        margin-bottom: 100px;
+    }
+    footer .footer-support {
+        padding: 0 20px;
+        margin-bottom: 100px;
+    }
+    footer .footer-container {
+        grid-column: 1/4;
+        padding: 0 10px;
+    }
+    footer .footer-container {
+        font-weight: 100;
+    }
+}
+
+/* Desktop
+-------------------------------------------------- */
+@media only screen and (min-width: 1024px) {
+    /* Index */
+    .index-header {
+    background-color: #F8F8EB;
+    background-image: url(../img/study-background-desktop.png);
+    background-repeat: no-repeat;
+    background-position-x:0px;
+    background-position-y: 0px;
+    background-size: 100%;
+    height: 550px;
+    }
+    .index-header h1 {
+        padding: 0 130px;
+        padding-top: 100px;
+        font-size: 62px;
+        font-weight: 800;
+    }
+    .index-header p {
+        padding: 0 130px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        width: 50%;
+    }
+    .index-container {
+        padding: 50px 100px;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    .index-container .index-course {
+    padding: 50px 20px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .index-container .index-course h2 {
+        grid-column: 1/5;
+    }
+    .index-container .index-course .p {
+        grid-column: 1/5;
+        width: 60%;
+    }
+    .index-container .offer {
+        padding: 50px 20px;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+    .index-container .offer h2 {
+        grid-column: 1/4;
+    }
+    .index-container .offer .p {
+        grid-column: 1/4;
+        width: 60%;
+    }
+    .index-container .offer article {
+        margin: 0 10px;
+        margin-top: 20px;
+    }
+    .index-container .offer h3 {
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 28px;
+    }
+    .index-container .offer p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+    }
+    .index-container .index-faq h2 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 42px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .black-button {
+        color: #fff;
+        background-color: #000;
+        padding: 15px 20px;
+        font-size: 16px;
+        font-weight: 300;
+        text-decoration: none;
+        transition: all 0.5s ease-in-out;
+        grid-column: 1/2;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 0px;
+    }
+    #expander {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+    /* Courses */
+    .course-header {
+        padding: 100px 130px;
+    }
+        .course-container {
+        padding: 50px 0;
+        padding-right: 120px;
+        padding-left: 120px;
+        max-width: 1500px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    /* About */
+    .about-header {
+        padding: 100px 130px;
+    }
+    .about-container {
+        padding-right: 120px;
+        padding-left: 120px;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    .about-container .company h2 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 42px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        margin-right: 10px; 
+        margin-bottom: 0px;
+    }
+    .about-container .company p {
+        margin-left: 10px;
+    }
+    .about-container .team {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .about-container .team h2 {
+        grid-column: 1/5;
+    }
+    .about-container .team #member1 {
+        grid-column: 1/2;
+    }
+    .about-container .team #member2 {
+        grid-column: 2/3;
+    }
+    .about-container .team #member3 {
+        grid-column: 3/4;
+    }
+    .about-container .team #member4 {
+        grid-column: 4/5;
+    }
+    /* FAQ */
+    .faq-header {
+        padding: 100px 130px;
+    }
+    .faq-container {
+        padding-right: 120px;
+        padding-left: 120px;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    /* Admin */
+    .admin-header {
+        padding: 100px 130px;
+    }
+    /* Admin course */
+    .crud-container {
+        padding: 50px 130px;
+    }
+    /* Login */
+    .login-container {
+        padding: 50px 130px;
+    }
+    .crud-container .admin-faq {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 50px;
+    }  
+    /* Footer */
+    footer {
+        padding: 150px 110px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    footer .footer-links {
+        grid-column: 1/2;
+        padding: 0 20px;
+        margin-bottom: 50px;
+    }
+    footer .footer-courses {
+        grid-column: 2/3;
+        padding: 0 20px;
+        margin-bottom: 100px;
+    }
+    footer .footer-company {
+        grid-column: 3/4;
+        padding: 0 20px;
+        margin-bottom: 100px;
+    }
+    footer .footer-support {
+        grid-column: 4/5;
+        padding: 0 20px;
+        margin-bottom: 100px;
+    }
+    footer .footer-container {
+        grid-column: 1/5;
+        padding: 0 20px;
+    }
+}

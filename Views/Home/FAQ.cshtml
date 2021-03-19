@@ -1,0 +1,27 @@
+﻿@model IEnumerable<DT102GProject.Models.FAQ>
+@{
+    ViewData["Title"] = "Company - FAQ";
+}
+
+<header class="faq-header">
+    <h1>Frequently Asked Questions</h1>
+    <p>For further questions please contact info@comecode.com</p>
+</header>
+<div class="faq-container">
+    <ul id="expander">
+        @foreach (var item in Model)
+        {
+            <li>
+                <button class="expanderBtn" aria-expanded="false">
+                    @Html.DisplayFor(modelItem => item.Question)
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="textExpand" role="region">
+                    <p>
+                        @Html.DisplayFor(modelItem => item.Answer)
+                    </p>
+                </div>
+            </li>
+        }
+    </ul>
+</div>
